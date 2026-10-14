@@ -1,31 +1,40 @@
-# Bell–Skandera: resume at degree 12
+# Bell–Skandera: degree-12 research checkpoint
 
-Last updated: 12 October 2026, Brisbane.
+Last updated: **14 October 2026, evening (Brisbane)**.
 
-**Do not restart at the degree-7 GitHub checkpoint.** The shared research log reports candidate certificates through degree 11. The present work continues degree 12. None of these is an independently established theorem.
+**Resume at degree 12, not the older degree-7 package.** Candidate certificates through degree 11 were reported in an earlier shared research log, but the original degree-11 verifier/certificates have not yet been independently recovered or reviewed. Nothing here constitutes a proof of Bell–Skandera.
 
-Source checkpoint: https://chatgpt.com/share/6accb4a5-2d88-83ec-bf9d-05544e8303f2
+Original shared research checkpoint: https://chatgpt.com/share/6accb4a5-2d88-83ec-bf9d-05544e8303f2
 
-Read `DEGREE12_METHOD.md` for the reduction, new shifted-moment pruning, validation, and run instructions.
+## Current exact degree-12 computational frontier
 
-| Degree-12 index | Total pairs | Status |
-|---:|---:|---|
-| 1 | 0 | Excluded by finite reduction, reproduced locally |
-| 2 | 393 | Exhausted locally; zero survivors |
-| 3 | 3,364 | Exhausted locally; zero survivors |
-| 4 | 13,291 | Exhausted locally; zero survivors |
-| 5 | 30,203 | 4,822 completed locally; zero survivors so far |
-| 6 | 34,464 | 1,504 completed locally; zero survivors so far |
-| 7 | 25,171 | No local exhaustive search yet |
-| 8 | 11,045 | Earlier log reports over 7,900 checked; exact resumable state unavailable |
-| 9 | 2,504 | Earlier log reports exhausted; original certificate unavailable locally |
-| 10 | 241 | Earlier log reports exhausted; original certificate unavailable locally |
-| 11 | 0 | Excluded by finite reduction, reproduced locally |
+The finite reduction yields **120,676** putative violating adjacent coefficient pairs. Regenerated from integer arithmetic on 14 Oct; analytic finite cutoff and coefficient bounds are proved (conditional on standard Newton/Maclaurin and KK results) in `FINITE_REDUCTION_PROOF_AUDIT_2026-10-14.md`. Full search completeness and moment-pruning soundness still require independent review.
 
-Total finite pairs: **120,676**. Locally exhausted full branches 2–4 comprise **17,048 pairs**. The reconstructed degree-11 frontier matches the shared log's **34,948** pairs exactly; this count match is not a re-verification of the earlier proof.
+| Index k | Total frontier pairs | Current saved progress | Status |
+| ---: | ---: | ---: | --- |
+| 1 | 0 | n/a | Excluded by finite reduction |
+| 2 | 393 | 393 | Locally exhausted; zero survivors reported |
+| 3 | 3,364 | 3,364 | Locally exhausted; zero survivors reported |
+| 4 | 13,291 | 13,291 | Locally exhausted; zero survivors reported |
+| 5 | 30,203 | **8,541** | Partial; zero survivors reported |
+| 6 | 34,464 | **1,788** | Partial; zero survivors reported |
+| 7 | 25,171 | 0 | Unsearched locally |
+| 8 | 11,045 | 0 recoverable | Older work reported >7,900 tested; no resumable state |
+| 9 | 2,504 | 0 recoverable | Older log reports complete; certificate not recovered |
+| 10 | 241 | 0 recoverable | Older log reports complete; certificate not recovered |
+| 11 | 0 | n/a | Excluded by finite reduction |
 
-Next actions: resume indices 5 and 6 from local checkpoints; extend pruning or change enumeration direction for the difficult central indices; obtain the degree-11 verification package from the original chat to recover earlier exact certificates and the degree-12 index-8 checkpoint. The shared-page package link did not expose a download.
+**Current authoritative machine state is always the latest `degree12_k*_checkpoint.json`**, not this summary or scheduled-task prompt. Currently k5 next pair is (966,1151), k6 next pair is (1001,840). Do not reset or double-count completed pairs.
 
-The new affine pruning passed 7,200 exact checks using rational Gaussian determinants and positive-root controls. A separate audit of the exhaustive-search logic is still required. Keep original-reported and newly reproduced results separate.
+## Method and validation
 
-No GitHub publication or scheduled-task change was made in this session.
+- Read `DEGREE12_METHOD.md` for finite frontier and exact shifted/unshifted moment pruning.
+- Read `FINITE_REDUCTION_PROOF_AUDIT_2026-10-14.md` for the formal analytic reduction and coefficient caps.
+- Read `LIVE_TEST_2026-10-13.md` and `RUN_2026-10-14_EVENING.md` for provenance and known limitations.
+- Run `python audit_evening_20261014.py` for an independent arithmetic consistency audit (not exhaustive coverage).
+- Resume one branch at a time using `python degree12_search.py 5 60` or `python degree12_search.py 6 60`; file writes are checkpointed after complete pairs. Direct external network/GitHub cloning may be unavailable inside the execution sandbox; use the connected GitHub service and verify commits.
+- Before claiming a degree-12 proof, independently audit both recursion completeness and all moment-based pruning, and exhaust every remaining branch.
+
+### Known limits
+
+The positive-root matrix arguments yield necessary conditions. Zero survivors in *partially* completed searches is evidence only for those specific checked ranges. Random/arithmetic audits do not prove search completeness. The broader Bell–Skandera conjecture remains unresolved in this research.
