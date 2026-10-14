@@ -1,0 +1,1 @@
+Degree 12 k5: 6733 / 30203 pairs completed. No survivors. Independent audit script: audit_20261014.py. See updated checkpoint.
