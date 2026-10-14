@@ -1,9 +1,9 @@
 {
   "degree": 12,
   "index": 5,
-  "completed_pairs": 6342,
+  "completed_pairs": 6733,
   "survivors": [],
-  "nodes": 8505486,
+  "nodes": 9632007,
   "method": "Newton plus unshifted and shifted leading moment determinants; unreviewed",
   "total_pairs": 30203,
   "complete": false
