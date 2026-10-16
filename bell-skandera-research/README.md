@@ -1,3 +1,7 @@
+> **CURRENT STATUS — 16 OCTOBER 2026:** The degree-12 brute-force status below is retained as a historical checkpoint. The current research priority is an **UNREVIEWED structural candidate computer-assisted result through degree 14**, not an established proof. Start at [CHECKPOINT_2026-10-16_DEGREE14.md](CHECKPOINT_2026-10-16_DEGREE14.md) and the [16 October follow-up audit](audits/2026-10-16/FOLLOWUP_CHECKPOINT_2026-10-16.md). The primary 16 October detailed research/proof/verifier archive is stored at the repository root as `Bell_Skandera_2026-10-16_independent_degree14_audit (8).zip`. Its source is preserved but requires independent verification of reductions and full search coverage. The follow-up C++ and Python tests are separately tracked under `audits/2026-10-16/`. **Do not revert to incomplete degree-12 k5/k6 brute-force work unless the structural approach fails.**
+
+---
+
 # Bell–Skandera: degree-12 research checkpoint
 
 Last updated: **14 October 2026, evening (Brisbane)**.
