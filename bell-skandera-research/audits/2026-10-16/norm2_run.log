@@ -1,0 +1,42 @@
+[
+  {
+    "n": 43,
+    "m": 268,
+    "q3_interval": [980, 1027],
+    "q3_visited": 48,
+    "q3_feasible": 48,
+    "nonnegative_h3_candidates": [],
+    "max_h3_at_lower": -203612864,
+    "argmax": [980, 2463, 2463]
+  },
+  {
+    "n": 44,
+    "m": 273,
+    "q3_interval": [997, 1042],
+    "q3_visited": 46,
+    "q3_feasible": 46,
+    "nonnegative_h3_candidates": [],
+    "max_h3_at_lower": -251319136,
+    "argmax": [997, 2502, 2503]
+  },
+  {
+    "n": 44,
+    "m": 274,
+    "q3_interval": [1000, 1050],
+    "q3_visited": 51,
+    "q3_feasible": 51,
+    "nonnegative_h3_candidates": [],
+    "max_h3_at_lower": -241075200,
+    "argmax": [1000, 2509, 2509]
+  },
+  {
+    "n": 45,
+    "m": 279,
+    "q3_interval": [1017, 1064],
+    "q3_visited": 48,
+    "q3_feasible": 48,
+    "nonnegative_h3_candidates": [],
+    "max_h3_at_lower": -294303096,
+    "argmax": [1017, 2548, 2548]
+  }
+]
