@@ -1,0 +1,18 @@
+k=1 blocks=43 explicit_n=0 residual=0 special=0
+k=2 blocks=137 explicit_n=0 residual=0 special=0
+k=3 blocks=141 explicit_n=0 residual=0 special=0
+k=4 blocks=151 explicit_n=0 residual=0 special=0
+k=5 blocks=169 explicit_n=0 residual=0 special=0
+k=6 blocks=171 explicit_n=0 residual=0 special=0
+k=7 blocks=195 explicit_n=0 residual=0 special=0
+k=8 blocks=201 explicit_n=0 residual=0 special=0
+k=9 blocks=215 explicit_n=0 residual=0 special=0
+k=10 blocks=237 explicit_n=0 residual=0 special=0
+k=11 blocks=1679 explicit_n=298894 residual=0 special=0
+k=12 blocks=5635 explicit_n=541126 residual=0 special=0
+k=13 blocks=3757 explicit_n=114782 residual=483 special=0
+k=14 blocks=1823 explicit_n=14311 residual=1508 special=0
+k=15 blocks=569 explicit_n=714 residual=151 special=37
+k=16 blocks=53 explicit_n=0 residual=0 special=0
+DONE d=17 blocks=15176 explicit_n=969827 residual=2142 special=37 file=cpp_interval_frontier_degree17_20261018.json
+ELAPSED 0.89
