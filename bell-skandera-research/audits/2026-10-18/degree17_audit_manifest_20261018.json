@@ -1,0 +1,19 @@
+{
+  "degree": 17,
+  "residual": 2142,
+  "special": 37,
+  "intervals": 578295,
+  "q5_integer_values_excluded": 193610278,
+  "python_m_intervals": 15176,
+  "explicit_mn_checks": 969827,
+  "cpp_high_index_raw": 226485,
+  "residual_sha256": "f2763600f7244981a711a4d581b078afa3cc285b9d847300b112995eb7b121e0",
+  "special_sha256": "48f93be87cc5fc15fc6ba20d104630633a35466d114462459be6cee5754763b7",
+  "cpp_residual_and_special_lists_equal": true,
+  "cpp_hankel_survivors": 0,
+  "python_hankel_survivors": 0,
+  "special_norm2_max_H3": -722782224,
+  "full_cpp_interval_classifier_all_k_verified": true,
+  "cross_language_full_frontier_degrees": "2-17",
+  "cross_language_case_lists_exactly_equal": true
+}
