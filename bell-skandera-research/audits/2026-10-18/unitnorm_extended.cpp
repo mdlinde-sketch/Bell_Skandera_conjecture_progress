@@ -20,7 +20,7 @@ U tangent(int d,int j,U q1,U q2){return (cpp_int(C[d][j])*ipow(q2,j-1)*ipow(d,j-
 struct Audit {U nodes[7]={},prefixes=0,residual=0,h3prune=0,h4prune=0,survivors=0,blockprune=0,blockq5=0;};
 struct Prefix {
  int d; U q[7]={};U tan[7]={}; cpp_int p[7]={};cpp_int h3=0, co00=0,co11=0,co22=0,co01=0,co02=0,co12=0;
- void moments4(){p[0]=d;p[1]=q[1];p[2]=p[1]*p[1]-2*q[2];p[3]=p[1]*p[2]-q[2]*p[2]+q[3]*p[1]-4*q[4];
+ void moments4(){p[0]=d;p[1]=q[1];p[2]=p[1]*p[1]-2*q[2];p[3]=p[1]*p[2]-q[2]*p[1]+3*q[3];p[4]=p[1]*p[3]-q[2]*p[2]+q[3]*p[1]-4*q[4];
   auto &a=p[0],&b=p[1],&c=p[2],&e=p[3],&f=p[4];
   co00=c*f-e*e;co11=a*f-c*c;co22=a*c-b*b;
   co01=c*e-b*f;co02=b*e-c*c;co12=b*c-a*e;
