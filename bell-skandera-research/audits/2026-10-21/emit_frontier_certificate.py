@@ -2,8 +2,10 @@
 Records [k,a,b,kind]: 0 impossible, 1 Smyth trace, 2 explicit singleton.
 Independent checker must validate all mathematics; this is not a verifier.
 """
-import gzip,json
+import gzip,json,sys
 from math import comb
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parent.parent/'2026-10-18'))
 from independent_python_frontier_degree17 import kk_next,max_n,max_coeff,cutoff
 
 def emit(d=17,path='frontier_cover_d17.jsonl.gz'):
