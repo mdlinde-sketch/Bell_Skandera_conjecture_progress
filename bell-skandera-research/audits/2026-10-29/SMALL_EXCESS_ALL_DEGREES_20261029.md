@@ -1,8 +1,10 @@
 # All-degree small-excess reduction (29 October 2026)
 
+**CORRECTED 29 OCTOBER 2026:** The cubic and last quartic below have been corrected to match Smyth's original trace theorem. The earlier orientations invalidate the residual-degree bound as written. See the [independent adversarial audit](independent_followup/AUDIT.md) for exact counterexamples to the old reduction, a repaired proof, and an independent s<=6 certificate.
+
 **UNREVIEWED RESEARCH NOTE.** Not a proof of unrestricted Bell–Skandera; no claim of novelty or external endorsement.
 
-For an integer real-negative-rooted polynomial F(t)=1+a1*t+...+ad*t^d, put s=a1-d>=0. Factor F into irreducible integer constant-one factors. For each irreducible Q, Smyth's 1984 theorem gives [t]Q > (17719/10000) deg(Q) unless Q belongs to five explicit exceptional polynomials (1+t, 1+3t+t^2, 1+6t+5t^2+t^3, 1+7t+13t^2+7t^3+t^4, 1+8t+14t^2+7t^3+t^4). All five satisfy Kruskal–Katona (KK), and simplicial joins multiply f-polynomials.
+For an integer real-negative-rooted polynomial F(t)=1+a1*t+...+ad*t^d, put s=a1-d>=0. Factor F into irreducible integer constant-one factors. For each irreducible Q, Smyth's 1984 theorem gives [t]Q > (17719/10000) deg(Q) unless Q belongs to five explicit exceptional polynomials (1+t, 1+3t+t^2, 1+5t+6t^2+t^3, 1+7t+13t^2+7t^3+t^4, 1+7t+14t^2+8t^3+t^4). All five satisfy Kruskal–Katona (KK), and simplicial joins multiply f-polynomials.
 
 Every non-(1+t) factor has excess at least half its degree, therefore (1+t)^max(0,d-2s) divides F. After removing *all* Smyth exceptional factors, remaining G has degree g < 10000*s/7719 (unless G=1). Excess is additive and nonnegative on all factors.
 
@@ -10,7 +12,7 @@ Every non-(1+t) factor has excess at least half its degree, therefore (1+t)^max(
 
 **Exact-arithmetic candidate through s<=6:** The same reduction gives g<=7. For g=4..7 the nonexceptional trace n must satisfy floor(17719g/10000)+1<=n<=g+6. Enumerate all integer coefficient prefixes with Maclaurin bounds C(g,k)<=a_k<=floor(C(g,k)(n/g)^k) and Newton bounds a_k<=floor(a_(k-1)^2*C(g,k-2)*C(g,k)/(a_(k-2)*C(g,k-1)^2)). For g=4,5, all admissible vectors satisfy KK directly. For g=6,7 enumerate a2,a3,a4, reject negative H3 (3x3 reciprocal-root power-sum Hankel determinant), then check KK2,KK3, and all possible a5,a6 KK violations using exact Newton bounds; the terminal inequality follows from global Maclaurin. All cases passed in a separate standard-library checker; no previous d<=17 witnesses were used. For g=4 allowed n=8,9,10; g=5 n=9,10,11; g=6 n=11,12; g=7 n=13. No complete or unrestricted theorem is asserted without review.
 
-Smyth's **original 1984 primary source itself enumerates all irreducible totally positive algebraic integers with excess <=6** (see its appendix), offering an independent route to audit this corollary: https://www.numdam.org/article/AIF_1984__34_3_1_0.pdf . Bell–Skandera paper's statement of the five-exception theorem: https://www.lehigh.edu/~mas906/papers/logc.pdf .
+Smyth's **original 1984 primary source itself enumerates all irreducible totally positive algebraic integers with excess <=6** (see its appendix), offering an independent route to audit this corollary: https://www.numdam.org/article/AIF_1984__34_3_1_0.pdf . The Bell–Skandera manuscript's displayed five-exception statement reverses these two exceptions; use Smyth's original list instead. Manuscript for comparison: https://www.lehigh.edu/~mas906/papers/logc.pdf .
 
 Earlier conversational slip corrected: product(lambda_i)>=1 does NOT imply sum(1/lambda_i)>=d. This false inference is not used.
 

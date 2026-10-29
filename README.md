@@ -1,3 +1,5 @@
+> **29 October follow-up correction:** Two Smyth exceptions were reversed in the earlier small-excess note. The corrected all-degree s<=3 proof and independently reproduced s<=6 certificate, with precise scope and an all-order Hankel identity, are in the [adversarial follow-up audit](bell-skandera-research/audits/2026-10-29/independent_followup/AUDIT.md). The unrestricted conjecture remains unproved. Earlier trace-factor reductions require the corrected exception orientation; no new finite-degree extension is claimed.
+
 # Bell–Skandera conjecture: candidate proofs for degrees 5–7
 
 **Research status:** AI-generated, **unreviewed candidate proofs**, not established theorems. Mathematical arguments and finite computational certificates are provided for independent verification. Neither a successful script run nor agreement between different programs verifies the completeness of the underlying analytic reduction.

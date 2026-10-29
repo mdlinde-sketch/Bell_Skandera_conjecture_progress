@@ -67,8 +67,8 @@ def prefix(d,n):
     return counts
 
 def main():
-    exceptions=((1,1),(1,3,1),(1,6,5,1),
-                (1,7,13,7,1),(1,8,14,7,1))
+    exceptions=((1,1),(1,3,1),(1,5,6,1),
+                (1,7,13,7,1),(1,7,14,8,1))
     for a in exceptions:
         assert all(a[i+1]<=kk(i,a[i]) for i in range(1,len(a)-1))
     # All nonexceptional irreducibles have [t]F > 17719*d/10000.

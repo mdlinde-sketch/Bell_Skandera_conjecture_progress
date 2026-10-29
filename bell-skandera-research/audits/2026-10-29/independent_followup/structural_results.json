@@ -1,0 +1,80 @@
+{
+  "prime_family_controls": [
+    {
+      "p": 5,
+      "degree": 2,
+      "excess": 1,
+      "norm": 1,
+      "positive_roots": 2
+    },
+    {
+      "p": 7,
+      "degree": 3,
+      "excess": 2,
+      "norm": 1,
+      "positive_roots": 3
+    },
+    {
+      "p": 11,
+      "degree": 5,
+      "excess": 4,
+      "norm": 1,
+      "positive_roots": 5
+    },
+    {
+      "p": 13,
+      "degree": 6,
+      "excess": 5,
+      "norm": 1,
+      "positive_roots": 6
+    },
+    {
+      "p": 17,
+      "degree": 8,
+      "excess": 7,
+      "norm": 1,
+      "positive_roots": 8
+    },
+    {
+      "p": 19,
+      "degree": 9,
+      "excess": 8,
+      "norm": 1,
+      "positive_roots": 9
+    },
+    {
+      "p": 23,
+      "degree": 11,
+      "excess": 10,
+      "norm": 1,
+      "positive_roots": 11
+    },
+    {
+      "p": 29,
+      "degree": 14,
+      "excess": 13,
+      "norm": 1,
+      "positive_roots": 14
+    },
+    {
+      "p": 31,
+      "degree": 15,
+      "excess": 14,
+      "norm": 1,
+      "positive_roots": 15
+    }
+  ],
+  "terminal_scalar_candidate": {
+    "tests": 39500,
+    "degree_range": [
+      2,
+      80
+    ],
+    "m_range": [
+      1,
+      500
+    ],
+    "status": "NO FAILURE IN FINITE RANGE; UNIVERSAL STATEMENT UNPROVED"
+  },
+  "status": "PASS"
+}

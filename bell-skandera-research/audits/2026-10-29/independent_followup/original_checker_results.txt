@@ -1,0 +1,10 @@
+d=4 n=8 full=684 KK offenders=0
+d=4 n=9 full=1835 KK offenders=0
+d=4 n=10 full=4756 KK offenders=0
+d=5 n=9 full=8705 KK offenders=0
+d=5 n=10 full=46656 KK offenders=0
+d=5 n=11 full=164829 KK offenders=0
+d=6 n=11 prefix=[36, 1357, 39421, 18102, 0] KK offenders=0
+d=6 n=12 prefix=[46, 2376, 101295, 44154, 0] KK offenders=0
+d=7 n=13 prefix=[52, 3582, 254745, 116823, 1297941] KK offenders=0
+PASS: arithmetic lemma for all excess s<=6 (external review pending)
