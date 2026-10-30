@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-30",
+  "status": "PASS",
+  "k3_base": [
+    {
+      "r": 4,
+      "q_count": 5,
+      "min_exact_margin": 332
+    },
+    {
+      "r": 5,
+      "q_count": 9,
+      "min_exact_margin": 1936
+    },
+    {
+      "r": 6,
+      "q_count": 14,
+      "min_exact_margin": 7811
+    }
+  ],
+  "ratio_controls": 2033,
+  "scalar_exact_grid": 198000,
+  "scalar_exact_random": 6225,
+  "positive_integer_root_polynomials": 480,
+  "false_no_ceiling_examples": [
+    [
+      10,
+      2
+    ],
+    [
+      10,
+      3
+    ]
+  ],
+  "caveat": "Finite exact controls only; proof is in TERMINAL_KK_PROOF_2026-10-30.md."
+}
