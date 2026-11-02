@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "pointwise_stationary_intervals": 2,
+  "pointwise_margin_lower_units_1e_5": [
+    1953,
+    1027
+  ],
+  "log2_upper_below_7_10": true,
+  "degree3_discriminants": {
+    "5": 5,
+    "6": 68,
+    "7": -59,
+    "8": -424
+  },
+  "norm2_degree_controls": 249,
+  "arithmetic": "exact rational and integer"
+}
